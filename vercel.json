@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/cron/daily/route.ts": { "maxDuration": 900 },
+    "api/cron/retry/route.ts": { "maxDuration": 900 }
+  },
+  "crons": [
+    { "path": "/api/cron/daily", "schedule": "30 3 * * *" },
+    { "path": "/api/cron/retry", "schedule": "*/5 * * * *" }
+  ]
+}
